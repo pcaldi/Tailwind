@@ -1,8 +1,12 @@
-import { Mail } from 'lucide-react'
+import { Bold, Italic, Link, List, ListOrdered, Mail } from 'lucide-react'
 import * as Input from '../components/Input'
 import * as FileInput from '../components/Form/FileInput'
 
 import { SettingsTabs } from '../components/SettingsTabs'
+import { Select } from '../components/Form/Select'
+import { SelectItem } from '../components/Form/Select/SelectItem'
+import { TextArea } from '../components/Form/TextArea'
+import { Button } from '../components/Button'
 
 export default function Home() {
   return (
@@ -19,19 +23,10 @@ export default function Home() {
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <button
-              type="button"
-              className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-zinc-50 "
-            >
-              Cancel
-            </button>
-            <button
-              form="settings"
-              type="submit"
-              className="rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-violet-700"
-            >
+            <Button variant="outline">Cancel</Button>
+            <Button variant="primary" type="submit" form="settings">
               Save
-            </button>
+            </Button>
           </div>
         </div>
         <form
@@ -108,8 +103,10 @@ export default function Home() {
             >
               Country
             </label>
-
-            <div></div>
+            <Select placeholder="Select a country...">
+              <SelectItem value="br" text="Brasil" />
+              <SelectItem value="us" text="United States" />
+            </Select>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
@@ -120,7 +117,10 @@ export default function Home() {
               Timezone
             </label>
 
-            <div></div>
+            <Select placeholder="Timezone">
+              <SelectItem value="utc" text="America Standard Time (UTC-3:00)" />
+              <SelectItem value="utc8" text="Pacific Standard Time (UTC-8)" />
+            </Select>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
@@ -130,7 +130,52 @@ export default function Home() {
                 Write a short introduction.
               </span>
             </label>
-            <div></div>
+            <div className="space-y-3">
+              <div className="grid grid-cols-2 gap-3">
+                <Select placeholder="" defaultValue="normal">
+                  <SelectItem
+                    value="normal"
+                    defaultChecked
+                    text="Normal Text"
+                  />
+                  <SelectItem value="md" text="Markdown" />
+                </Select>
+
+                <div className="flex items-center gap-1">
+                  <Button type="button" variant="ghost">
+                    <Bold className="h-4 w-4 text-zinc-500" strokeWidth={3} />
+                  </Button>
+
+                  <Button type="button" variant="ghost">
+                    <Italic
+                      className="h-4 w-4  text-zinc-500"
+                      strokeWidth={3}
+                    />
+                  </Button>
+
+                  <Button type="button" variant="ghost">
+                    <Link className="h-4 w-4  text-zinc-500" strokeWidth={3} />
+                  </Button>
+
+                  <Button type="button" variant="ghost">
+                    <List className="h-4 w-4  text-zinc-500" strokeWidth={3} />
+                  </Button>
+
+                  <Button type="button" variant="ghost">
+                    <ListOrdered
+                      className="s h-4 w-4 text-zinc-500"
+                      strokeWidth={3}
+                    />
+                  </Button>
+                </div>
+              </div>
+              <div>
+                <TextArea
+                  id="bio"
+                  defaultValue="I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development."
+                />
+              </div>
+            </div>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
@@ -145,23 +190,16 @@ export default function Home() {
             </label>
             <FileInput.Root>
               <FileInput.Trigger />
+              <FileInput.FileList />
               <FileInput.Control multiple />
             </FileInput.Root>
           </div>
 
           <div className="flex items-center justify-end gap-2 pt-5">
-            <button
-              type="button"
-              className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-zinc-50 "
-            >
-              Cancel
-            </button>
-            <button
-              type="submit"
-              className="rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-violet-700"
-            >
+            <Button variant="outline">Cancel</Button>
+            <Button variant="primary" type="submit">
               Save
-            </button>
+            </Button>
           </div>
         </form>
       </div>
