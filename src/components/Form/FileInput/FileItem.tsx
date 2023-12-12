@@ -1,6 +1,6 @@
 import { CheckCircle2, Trash2, UploadCloud } from 'lucide-react'
-import { Button } from '../../Button'
-import { formatBytes } from '@/src/utils/formatBytes'
+import { Button } from '@/components/Button'
+import { formatBytes } from '@/utils/formatBytes'
 import { tv, VariantProps } from 'tailwind-variants'
 
 const fileItem = tv({

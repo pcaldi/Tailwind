@@ -1,8 +1,6 @@
-import * as React from 'react'
-
 export function Logo() {
   return (
-    <strong className="mx-1 flex items-center gap-2 text-xl font-semibold text-zinc-900">
+    <strong className="mx-1 flex items-center gap-2 text-xl font-semibold text-zinc-900 dark:text-zinc-100">
       <svg
         width={38}
         height={38}
@@ -10,8 +8,8 @@ export function Logo() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g filter="url(#filter0_dd_11201_307)">
-          <g clipPath="url(#clip0_11201_307)">
+        <g filter="url(#filter0_dd_226_307)">
+          <g clipPath="url(#clip0_226_307)">
             <rect x={3} y={2} width={32} height={32} rx={8} fill="#fff" />
             <rect
               x={3}
@@ -19,7 +17,7 @@ export function Logo() {
               width={32}
               height={32}
               rx={8}
-              fill="url(#paint0_linear_11201_307)"
+              fill="url(#paint0_linear_226_307)"
             />
             <path
               fillRule="evenodd"
@@ -49,15 +47,15 @@ export function Logo() {
               d="M35 28.602v.077H3v-.077h32zM35 12.64v.078H3v-.077h32zM35 23.281v.078H3v-.078h32zM35 7.32v.078H3V7.32h32z"
               fill="#D0D5DD"
             />
-            <g filter="url(#filter1_dd_11201_307)">
+            <g filter="url(#filter1_dd_226_307)">
               <circle
                 cx={19}
                 cy={18}
                 r={8}
-                fill="url(#paint1_linear_11201_307)"
+                fill="url(#paint1_linear_226_307)"
               />
             </g>
-            <g filter="url(#filter2_b_11201_307)">
+            <g filter="url(#filter2_b_226_307)">
               <path
                 d="M3 18h32v3.2c0 4.48 0 6.72-.872 8.432a8 8 0 01-3.496 3.496C28.92 34 26.68 34 22.2 34h-6.4c-4.48 0-6.72 0-8.432-.872a8 8 0 01-3.496-3.496C3 27.92 3 25.68 3 21.2V18z"
                 fill="#fff"
@@ -77,7 +75,7 @@ export function Logo() {
         </g>
         <defs>
           <filter
-            id="filter0_dd_11201_307"
+            id="filter0_dd_226_307"
             x={0}
             y={0}
             width={38}
@@ -96,7 +94,7 @@ export function Logo() {
             <feColorMatrix values="0 0 0 0 0.0627451 0 0 0 0 0.0941176 0 0 0 0 0.156863 0 0 0 0.06 0" />
             <feBlend
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_11201_307"
+              result="effect1_dropShadow_226_307"
             />
             <feColorMatrix
               in="SourceAlpha"
@@ -107,17 +105,17 @@ export function Logo() {
             <feGaussianBlur stdDeviation={1.5} />
             <feColorMatrix values="0 0 0 0 0.0627451 0 0 0 0 0.0941176 0 0 0 0 0.156863 0 0 0 0.1 0" />
             <feBlend
-              in2="effect1_dropShadow_11201_307"
-              result="effect2_dropShadow_11201_307"
+              in2="effect1_dropShadow_226_307"
+              result="effect2_dropShadow_226_307"
             />
             <feBlend
               in="SourceGraphic"
-              in2="effect2_dropShadow_11201_307"
+              in2="effect2_dropShadow_226_307"
               result="shape"
             />
           </filter>
           <filter
-            id="filter1_dd_11201_307"
+            id="filter1_dd_226_307"
             x={8}
             y={8}
             width={22}
@@ -136,7 +134,7 @@ export function Logo() {
             <feColorMatrix values="0 0 0 0 0.0627451 0 0 0 0 0.0941176 0 0 0 0 0.156863 0 0 0 0.06 0" />
             <feBlend
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_11201_307"
+              result="effect1_dropShadow_226_307"
             />
             <feColorMatrix
               in="SourceAlpha"
@@ -147,17 +145,17 @@ export function Logo() {
             <feGaussianBlur stdDeviation={1.5} />
             <feColorMatrix values="0 0 0 0 0.0627451 0 0 0 0 0.0941176 0 0 0 0 0.156863 0 0 0 0.1 0" />
             <feBlend
-              in2="effect1_dropShadow_11201_307"
-              result="effect2_dropShadow_11201_307"
+              in2="effect1_dropShadow_226_307"
+              result="effect2_dropShadow_226_307"
             />
             <feBlend
               in="SourceGraphic"
-              in2="effect2_dropShadow_11201_307"
+              in2="effect2_dropShadow_226_307"
               result="shape"
             />
           </filter>
           <filter
-            id="filter2_b_11201_307"
+            id="filter2_b_226_307"
             x={-2}
             y={13}
             width={42}
@@ -170,16 +168,16 @@ export function Logo() {
             <feComposite
               in2="SourceAlpha"
               operator="in"
-              result="effect1_backgroundBlur_11201_307"
+              result="effect1_backgroundBlur_226_307"
             />
             <feBlend
               in="SourceGraphic"
-              in2="effect1_backgroundBlur_11201_307"
+              in2="effect1_backgroundBlur_226_307"
               result="shape"
             />
           </filter>
           <linearGradient
-            id="paint0_linear_11201_307"
+            id="paint0_linear_226_307"
             x1={19}
             y1={2}
             x2={19}
@@ -190,7 +188,7 @@ export function Logo() {
             <stop offset={1} stopColor="#D0D5DD" />
           </linearGradient>
           <linearGradient
-            id="paint1_linear_11201_307"
+            id="paint1_linear_226_307"
             x1={15}
             y1={26}
             x2={23}
@@ -200,11 +198,12 @@ export function Logo() {
             <stop stopColor="#53389E" />
             <stop offset={1} stopColor="#6941C6" />
           </linearGradient>
-          <clipPath id="clip0_11201_307">
+          <clipPath id="clip0_226_307">
             <rect x={3} y={2} width={32} height={32} rx={8} fill="#fff" />
           </clipPath>
         </defs>
       </svg>
+
       <span>Untitled UI</span>
     </strong>
   )
